@@ -1,0 +1,117 @@
+body {
+    background: url("../Utilities/images/git.jpg");
+    background-size: cover;
+}
+
+.title {
+    color: azure;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 70%;
+}
+
+.information_Div {
+    margin-left: 10rem !important;
+    background-color: rgb(233, 229, 229);
+    margin: auto;
+    width: 48%;
+    height: 90%;
+    padding: 20px;
+    border: 2px solid rgb(114, 112, 112);
+    border-radius: 1.3rem;
+    box-shadow: 5px 5px 15px #e7e7e7;
+}
+
+.search_Div {
+    text-align: center;
+    background-color: rgb(233, 229, 229);
+    margin: auto;
+    width: 25%;
+    height: 90%;
+    padding: 5px;
+    border: 2px solid rgb(114, 112, 112);
+    border-radius: 1.3rem;
+    box-shadow: 5px 5px 15px #e7e7e7;
+    position: relative;
+}
+
+.Name-input {
+    border-radius: 1rem;
+    border: 1.2px solid black;
+    width: 70%;
+    height: 10%;
+    outline: none;
+    position: absolute;
+    top: 35%;
+    right: 15%;
+    transform: translateY(-50%);
+}
+
+.submit-btn {
+    background-color: rgb(7, 167, 7);
+    height: 7%;
+    width: 50%;
+    color: white;
+    border-radius: 0.75rem;
+    position: absolute;
+    top: 55%;
+    right: 25%;
+    transform: translateY(-50%);
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.avatar-div {
+    width: 30%;
+    height: 40%;
+}
+
+.avatar-image {
+    width: 90%;
+    height: 100%;
+    border-radius: 60%;
+    border: 1px solid black;
+}
+
+.search-field-title {
+    font-style: italic;
+}
+
+.intro-container {
+    text-align: center;
+    position: absolute;
+    left: 40%;
+}
+
+.avatar-intro {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
+
+.characteristics-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+}
+
+.chara-container{
+    position: absolute;
+    top: -50%;
+    left: 5%;
+}
