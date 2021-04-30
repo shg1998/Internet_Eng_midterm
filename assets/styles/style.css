@@ -1,7 +1,21 @@
+/****** 
+CSS section 
+written by MohammadHossein Nejadhendi
+******/
+
+/***
+Here i chose a baby git image background for body with  centring it and covering
+***/
+
 body {
-    background: url("../Utilities/images/git.jpg");
-    background-size: cover;
+    background: url("../Utilities/images/git.jpg") center / cover;
+    align-items: center;
+    justify-content: center;
 }
+
+/***
+Here i chose a azure color  for foreground of title and 50 px for fontsize and italic style
+***/
 
 .title {
     color: azure;
@@ -10,25 +24,41 @@ body {
     font-style: italic;
 }
 
+/***
+For centering its inside container, i used flexbox to center container both horizontally and vertically
+wrap attr and row direction with 70% height
+***/
+
 .flex-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 70%;
+    
 }
 
+/***
+For centering i used text align and set backcolor and width and height for information containerand etc
+***/
 .information_Div {
+    text-align: center;
     margin-left: 10rem !important;
     background-color: rgb(233, 229, 229);
     margin: auto;
-    width: 48%;
+    width: 50%;
     height: 90%;
     padding: 20px;
     border: 2px solid rgb(114, 112, 112);
     border-radius: 1.3rem;
     box-shadow: 5px 5px 15px #e7e7e7;
+    min-width: 36%;
+    position: relative;
 }
 
+/***
+For centering i used text align and set backcolor and width and height for information containerand etc
+and i set its position relative
+***/
 .search_Div {
     text-align: center;
     background-color: rgb(233, 229, 229);
@@ -42,7 +72,11 @@ body {
     position: relative;
 }
 
+/***
+styles for input in search section like padding and radius for it's border and set height and width for it and etc.
+***/
 .Name-input {
+    padding: 10px;
     border-radius: 1rem;
     border: 1.2px solid black;
     width: 70%;
@@ -54,6 +88,9 @@ body {
     transform: translateY(-50%);
 }
 
+/***
+styles for submit btn like backcolor and hover event (shadow and ...) with absolute pos and top attr and etc.
+***/
 .submit-btn {
     background-color: rgb(7, 167, 7);
     height: 7%;
@@ -71,47 +108,128 @@ body {
     box-shadow: 2px 2px 4px black;
     transition: box-shadow 0.3s ease-in-out;
 }
-
+/***
+styles for division that includes img avatar tag and set size to it!
+***/
 .avatar-div {
     width: 30%;
     height: 40%;
+    position: absolute;
 }
 
+/***
+styles for image tag and set backcolor and border to it and etc.
+***/
 .avatar-image {
-    width: 90%;
-    height: 100%;
+    width: 30%;
+    height: 45%;
+    position: absolute;
     border-radius: 60%;
     border: 1px solid black;
+    background-color: rgb(245, 225, 199);
 }
 
 .search-field-title {
     font-style: italic;
 }
-
+/***
+styles for division that includes h4 tags for introduction sections and informations!
+***/
 .intro-container {
     text-align: center;
     position: absolute;
     left: 40%;
+    min-width: 10%;
 }
 
 .avatar-intro {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
-    position: relative;
 }
-
+/***
+styles for division that includes bio texts and set its display flex with wrapping !
+***/
 .characteristics-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
     position: relative;
 }
 
-.chara-container{
+.chara-container {
     position: absolute;
-    top: -50%;
+    top: -30%;
     left: 5%;
+}
+
+/***
+styles for error division with backcolor and alignment and zindex with some controls like show and etc.
+***/
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgb(187, 9, 9);
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
 }

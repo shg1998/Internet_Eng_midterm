@@ -10,34 +10,39 @@
 </head>
 
 <body>
+    <!-- title -->
     <h1 class="title">github</h1>
+    <!-- main container -->
     <div class="flex-container">
         <div class="information_Div">
             <div class="avatar-intro">
-                <div class="avatar-div">
-                    <img src="./assets/Utilities/images/mohammadhossein.jpg" alt="avatar" class="avatar-image">
-                </div>
-                <div class="intro-container">
-                    <h3>mohammadhossein nezhadhendi</h3>
-                    <h3>https://shg.com</h3>
-                    <h3>Tehran , Iran</h3>
+                <!-- avatar image -->
+                <img class="avatar-image" id="avatar-img">
+                <!-- introduction container -->
+                <div class="intro-container" id="intro">
+                    <h3 id="user-name"></h3>
+                    <h3 id="user-blog"></h3>
+                    <h3 id="user-location"></h3>
+                    <h3 id="common-lang"></h3>
                 </div>
             </div>
+            <!-- bio container -->
             <div class="characteristics-container">
                 <div class="chara-container">
-                    <h3>software engineer</h3>
-                    <h3>Bsc Computer engineering</h3>
-                    <h3>Amirkabir Uni</h3>
+                    <h3 id="bio-user"></h3>
                 </div>
             </div>
         </div>
+        <!-- search container (contains input and btn) -->
         <div class="search_Div">
             <h2 class="search-field-title">Search Field</h2>
             <input type="text" class="Name-input" placeholder=" search...">
             <br>
             <br>
-            <button class="submit-btn">submit</button>
+            <button class="submit-btn" onclick="submitHandler()">submit</button>
         </div>
+        <!-- error container -->
+        <div id="snackbar"></div>
     </div>
 </body>
 
